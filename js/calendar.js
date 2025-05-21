@@ -1,4 +1,3 @@
-
 // grabs the elements from the html
 //these are used to display month/year, day cells(the boxes that store the day numbers), and navigation buttons
 const monthYear = document.getElementById("month-year");
