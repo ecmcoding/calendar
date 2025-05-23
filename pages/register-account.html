@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register account</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Register new account</h2>
+
+        <div id="error-messages"></div>
+
+        <!--form for registering new account-->
+        <form action="[Insert php file name here]" method="POST" id="registerForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" >
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" >
+
+            <button type="submit">Register account</button>
+        </form>
+        <p class="login-link">Already a member? <a href="[Insert link here]">Log in</a></p>
+    </div>
+
+    <!--references the javascript file-->
+    <script src="../js/validation.js"></script>
+</body>
+</html>
