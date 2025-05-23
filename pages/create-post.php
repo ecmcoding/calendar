@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +12,21 @@
 <body>
     <div class="header">
 
-        <div class="sitename">SITENAME</div>
+            <a href="../index.php" class="sitename">HappyDays</a> 
 
-        <!--TODO: Insert php file that will handle ending the session-->
-        <div class="nav-links">
-            Welcome | <a href="[Insert php file name here]">log out</a>
-        </div>
+            <div class="nav-links">
+                <?php if (!isset($_SESSION['username'])): ?>
+                    <a href="login.php">login</a> <span>|</span>
+                    <a href="register-account.php">register account</a> <span>|</span>
+                <?php else: ?>
+                    Welcome, <?= htmlspecialchars($_SESSION['username']) ?> <span>|</span>
+                    <a href="logout.php">log out</a> <span>|</span>
+                <?php endif; ?>
+
+                <a href="happy-words.php">happy words</a> <span>|</span>
+                <a href="have-a-laugh.php">have a laugh</a> <span>|</span>
+                <a href="about.php">about</a>
+            </div>
     </div>
 
     <div class="main-content">

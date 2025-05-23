@@ -189,12 +189,9 @@ textarea {
     cursor: pointer;
 }
 
+/* text-box */
 
-
-
-/* happy news */
-
-.news-box {
+.text-box {
     background: white;
     border-radius: 10px;
     padding: 20px;
@@ -205,7 +202,6 @@ textarea {
     line-height: 1.5;
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    white-space: pre-wrap;
     line-height: 1.6;
     font-size: 16px;
     color: #333;
@@ -226,7 +222,20 @@ textarea {
     font-family: 'Roboto', sans-serif;
 }
 
-/* happy news API */
+/* sitename */
+
+.sitename {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(50, 81, 255);
+    text-decoration: none;
+}
+
+.sitename:hover {
+    text-decoration: underline;
+}
+
+/* api credit link */
 
 .api-credit {
     text-align: center;
@@ -236,7 +245,7 @@ textarea {
 }
 
 .api-credit a {
-    color: #cce7ff;
+    color: #000000;
     text-decoration: none;
 }
 
