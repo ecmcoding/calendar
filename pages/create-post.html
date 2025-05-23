@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create post</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!--gets the font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+
+        <div class="sitename">SITENAME</div>
+
+        <!--TODO: Insert php file that will handle ending the session-->
+        <div class="nav-links">
+            Welcome | <a href="[Insert php file name here]">log out</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <div class="prompt">what good news do you wanna share?</div>
+
+        <!--TODO: Insert php filename-->
+        <form action="[Insert php file name here]" method="POST">
+            <textarea placeholder="your message..." required rows="10" cols="50"></textarea>
+            <div class="button-group">
+                <button type="submit" class="post-btn">post</button>
+                <button type="reset" class="delete-btn">delete</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

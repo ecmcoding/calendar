@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Words</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="sitename">HappyDays</div>
+        <div class="nav-links">
+            <!--TODO: Insert php file that will handle ending the session-->
+            Welcome | <a href="[Insert php file name here]">log out</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="prompt">...</div>
+
+        <div class="news-box" id="newsBox">
+            Loading quote...
+        </div>
+
+        <button onclick="getPositiveQuote()" class="post-btn">New Quote</button>
+
+        <div class="api-credit">
+            Powered by <a href="https://zenquotes.io/" target="_blank">ZenQuotes API</a>
+        </div>
+    </div>
+
+    <script src="../js/happy-words.js"></script>
+</body>
+</html>
