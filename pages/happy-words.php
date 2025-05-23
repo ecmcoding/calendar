@@ -14,8 +14,8 @@
 
         <div class="nav-links">
                 <?php if (!isset($_SESSION['username'])): ?>
-                    <a href="login.php">login</a> <span>|</span>
-                    <a href="register-account.php">register account</a> <span>|</span>
+                    <a href="login.html">login</a> <span>|</span>
+                    <a href="register-account.html">register account</a> <span>|</span>
                 <?php else: ?>
                     Welcome, <?= htmlspecialchars($_SESSION['username']) ?> <span>|</span>
                     <a href="create-post.php">create post</a> <span>|</span>
@@ -23,7 +23,7 @@
                 <?php endif; ?>
 
                 <a href="have-a-laugh.php">have a laugh</a> <span>|</span>
-                <a href="about.php">about</a>
+                <a href="about.html">about</a>
             </div>
     </div>
 
