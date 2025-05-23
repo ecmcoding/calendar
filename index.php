@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html> 
 <html lang="en"> 
     <head>
@@ -6,16 +8,23 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <!--creates the header with the links, which need to be added for usability-->
-
+        <!--creates the header with the links-->
         <div class="header">
-            <div class="sitename">HappyDays</div><br>
+            <a href="index.php" class="sitename">HappyDays</a>
+
             <div class="nav-links">
-                <!--Links are all designed to only work offline since this is a simple prototype only used offline-->
-                <a href="http://localhost/calendar/pages/login.html">login</a> <span>|</span>
-                <a href="http://localhost/calendar/pages/register-account.html">register acccount</a> <span>|</span>
-                <a href="http://localhost/calendar/pages/happy-words.html">happy words</a> <span>|</span>
-                <a href="http://localhost/calendar/pages/about.html">about</a>
+                <?php if (!isset($_SESSION['username'])): ?>
+                    <a href="pages/login.php">login</a> <span>|</span>
+                    <a href="pages/register-account.php">register account</a> <span>|</span>
+                <?php else: ?>
+                    Welcome, <?= htmlspecialchars($_SESSION['username']) ?> <span>|</span>
+                    <a href="pages/create-post.php">create post</a> <span>|</span>
+                    <a href="php/logout.php">log out</a> <span>|</span>
+                <?php endif; ?>
+
+                <a href="pages/happy-words.php">happy words</a> <span>|</span>
+                <a href="pages/have-a-laugh.php">have a laugh</a> <span>|</span>
+                <a href="pages/about.php">about</a>
             </div>
         </div>
 

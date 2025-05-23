@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="header">
+            <a href="../index.php" class="sitename">HappyDays</a> 
+    </div>
+
     <div class="form-container">
         <h2>Register new account</h2>
 
@@ -25,7 +31,7 @@
 
             <button type="submit">Register account</button>
         </form>
-        <p class="login-link">Already a member? <a href="[Insert link here]">Log in</a></p>
+        <p class="login-link">Already a member? <a href="login.php">Log in</a></p>
     </div>
 
     <!--references the javascript file-->
